@@ -17,7 +17,6 @@ public class Main {
             } else if (actualCommand.equals("SetInterest")) {
                 int id= Integer.parseInt(tokens[1]);
                 int ammount= Integer.parseInt(tokens[2]);
-                bankAccount.deposit(ammount);
             } else if (actualCommand.equals("GetInterest")) {
 
             } else {
