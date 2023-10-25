@@ -12,4 +12,9 @@ public class Dog extends Animal{
     public String toString() {
         return this.breed + " " + super.age;
     }
+
+    @Override
+    public void eat(){
+        System.out.println("Dog is eating");
+    }
 }
