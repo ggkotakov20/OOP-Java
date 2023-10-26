@@ -22,17 +22,13 @@ public class Main {
             int startChunk = start + i * chunkSize;
             int endChunk = i == (numThreads - 1) ? end : startChunk + chunkSize - 1;
 
-            findPrimeNumbersInRange(startChunk,endChunk);
-        }
-    }
-
-    private static void findPrimeNumbersInRange(int start, int end) {
-        for (int i = start; i <= end; i++) {
-            if (isPrime(i)) {
-                System.out.print(i+", ");
+            for (int j = startChunk; j <= endChunk; j++) {
+                if (isPrime(j)) {
+                    System.out.print(j+", ");
+                }
             }
+            System.out.println();
         }
-        System.out.println();
     }
 
     private static boolean isPrime(int number) {
