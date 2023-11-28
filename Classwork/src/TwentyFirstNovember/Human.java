@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public abstract class Human extends Creature{
+public abstract class Human implements Creature {
     protected String name;
     private int age;
     private List<String> cars;
