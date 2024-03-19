@@ -15,7 +15,7 @@ public class Main {
 
         DogComparatorByAge dogComparatorByAge = new DogComparatorByAge();
         dogs.sort(dogComparatorByAge);
-        dogs.sort(new DogComparatorByName());
+        dogs.sort(new DogComparatorByNameAndAge());
 
 //        List<String> names = new ArrayList<>();
 //        names.add("Ivan");
